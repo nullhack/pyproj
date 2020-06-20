@@ -1,0 +1,3 @@
+```gherkin
+{!../features/basic.feature!}
+```

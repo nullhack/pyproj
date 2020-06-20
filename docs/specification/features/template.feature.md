@@ -1,0 +1,3 @@
+```gherkin
+{!../features/template.feature!}
+```

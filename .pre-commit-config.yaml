@@ -1,0 +1,32 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.1.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    -   id: check-added-large-files
+    -   id: check-docstring-first
+    -   id: check-executables-have-shebangs
+    -   id: check-merge-conflict
+    -   id: check-toml
+    -   id: detect-private-key
+    -   id: pretty-format-json
+    -   id: requirements-txt-fixer
+-   repo: local
+    hooks:
+    -   id: isort
+        name: isort
+        entry: poetry run isort
+        language: system
+        types: [python]
+    -   id: black
+        name: black
+        entry: poetry run black
+        language: system
+        types: [python]
+    -   id: flake8
+        name: flake8
+        entry: poetry run flake8 --ignore E203,W503,B008 --max-line-length 89 --per-file-ignores="cli.py:DAR101","noxfile.py:DAR101","features/steps/*:DAR101,D103,S101,F811"
+        language: system
+        types: [python]

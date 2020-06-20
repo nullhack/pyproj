@@ -1,0 +1,84 @@
+[tool.poetry]
+name = "python-project-template"
+version = "0.1.0"
+description = ""
+authors = ["nullhack"]
+include = [
+    "python_project_template",
+    "cli.py"
+]
+
+[tool.poetry.urls]
+"homepage" = "https://nullhack.github.io/python-project-builder"
+"documentation" = "https://nullhack.github.io/python-project-builder"
+"repository" = "https://github.com/nullhack/python-project-builder"
+
+[tool.poetry.dependencies]
+python = ">=3.6.1,<=3.8.2"
+typer = "^0.2.1"
+typing = "^3.7.4"
+
+[tool.poetry.dev-dependencies]
+behave = "^1.2.6"
+black = "^19.10b0"
+coverage = {extras = ["toml"], version = "^5.1"}
+darglint = "^1.4.1"
+flake8 = "^3.8.3"
+flake8-bandit = "^2.1.2"
+flake8-black = "^0.2.0"
+flake8-bugbear = "^20.1.4"
+flake8-docstrings = "^1.5.0"
+isort = "^4.3.21"
+nox = "^2020.5.24"
+safety = "^1.9.0"
+pre-commit = "^2.5.1"
+flake8-isort = "^3.0.0"
+mkdocs = "^1.1.2"
+mkdocs-material = "^5.2.3"
+pip = "^20.1.1"
+mkdocs-material-extensions = "^1.0"
+markdown-include = "^0.5.1"
+markdown = "^3.2.2"
+mkdocs-minify-plugin = "^0.3.0"
+toml = "^0.10.1"
+xdoctest = "^0.12.0"
+
+[tool.poetry.scripts]
+app = "cli:app"
+
+[tool.coverage.paths]
+source = ["."]
+omit = ["noxfile.py", ".*", "features/*"]
+
+[tool.coverage.run]
+command_line = "-m behave --tags=-deprecated"
+branch = true
+source = ["."]
+omit = ["noxfile.py", ".*", "features/*"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 90
+exclude_lines = ["if __name__ == .__main__.:"]
+omit = ["noxfile.py", ".*", "features/*"]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+#[flake8]
+#select = ["ANN","B","B9","BLK","C","D","DAR","E","F","I","S","W"]
+#ignore = ["E203","W503","B008"]
+#max-complexity = 10
+#import-order-style = "google"
+#max-line-length = 89
+#per-file-ignores = ["cli.py:DAR101", "noxfile.py:DAR101", "features/steps/*:DAR101,D103,S101,F811"]
+
+[darglint]
+strictness = "short"
+
+[nox.mkdocs]
+clean_reference = true
+build_reference = true
+clean_specification = true
+build_specification = true

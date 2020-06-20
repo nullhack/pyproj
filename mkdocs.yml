@@ -1,0 +1,47 @@
+site_name: 'Project Builder'
+repo_name: 'nullhack/project_builder'
+site_description: 'A project template for python.'
+site_url: 'https://nullhack.github.io/python-project-builder'
+repo_url: 'https://github.com/nullhack/python-project-builder'
+edit_uri: ''
+
+copyright: Copyright &copy; 2020 Nullhack
+
+theme:
+  name: 'material'
+  palette:
+    scheme: default
+    primary: 'black'
+    accent: 'dark green'
+  icon:
+    repo: octicons/mark-github
+  logo: imgs/logo/code_icon.svg
+  favicon: imgs/favicon/code.svg
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      baselevel: 2
+      separator: '_'
+  - admonition
+  - codehilite
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown_include.include:
+      base_path: docs
+  - footnotes
+  - pymdownx.arithmatex
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
