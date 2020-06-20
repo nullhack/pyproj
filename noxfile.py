@@ -3,8 +3,9 @@ import shutil
 import tempfile
 from pathlib import Path
 
-import nox
 import toml
+
+import nox
 from nox.sessions import Session
 
 versions = ["3.6", "3.7", "3.8"]

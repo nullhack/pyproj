@@ -11,12 +11,16 @@ from behave import given, then, when
 
 
 class Capturing(list):
+    """Class to capture stdout."""
+
     def __enter__(self):
+        """Set a new stdout to capture changes."""
         self._stdout = sys.stdout
         sys.stdout = self._stringio = StringIO()
         return self
 
     def __exit__(self, *args):
+        """Return default stdout to It's place.."""
         self.extend(self._stringio.getvalue().splitlines())
         del self._stringio  # free up some memory
         sys.stdout = self._stdout

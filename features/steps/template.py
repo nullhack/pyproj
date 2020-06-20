@@ -15,6 +15,8 @@ logger = logging.Logger(__name__)
 def step_impl(context):
     from python_project_template import template
 
+    assert template.__name__
+
 
 @then("run all the functions to test coverage")
 def step_impl(context):
@@ -33,7 +35,7 @@ def step_impl(context):
         t.ExampleError("msg", 1)
     except Exception as err:
         logger.warning(err)
-    c =t.ExampleClass("param1", "param2", "param3")
+    c = t.ExampleClass("param1", "param2", "param3")
     c.readonly_property
     c.readwrite_property
     c.readwrite_property = 1

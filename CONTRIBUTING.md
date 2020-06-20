@@ -222,4 +222,3 @@ Creating Pull Requests
    new bugfix).
 4. Hit 'submit'! And please be patient - the maintainers will get to you when
    they can.
-

@@ -32,21 +32,11 @@ Todo:
 
 """
 
-import os
-import sys
-
 module_level_variable1 = 12345
-
-module_level_variable2 = 98765
-"""int: Module level variable documented inline.
-
-The docstring may span multiple lines. The type may optionally be specified
-on the first line, separated by a colon.
-"""
 
 
 def function_with_types_in_docstring(param1, param2):
-    """Example function with types documented in the docstring.
+    """Execute a function with types documented in the docstring.
 
     `PEP 484`_ type annotations are supported. If attribute, parameter, and
     return types are annotated according to `PEP 484`_, they do not need to be
@@ -66,7 +56,7 @@ def function_with_types_in_docstring(param1, param2):
 
 
 def function_with_pep484_type_annotations(param1: int, param2: str) -> bool:
-    """Example function with PEP 484 type annotations.
+    """Execute a function with PEP 484 type annotations.
 
     Args:
         param1: The first parameter.
@@ -79,13 +69,13 @@ def function_with_pep484_type_annotations(param1: int, param2: str) -> bool:
 
 
 def module_level_function(param1, param2=None, *args, **kwargs):
-    """This is an example of a module level function.
+    """Create an example of a module level function.
 
     Function parameters should be documented in the ``Args`` section. The name
     of each parameter is required. The type and description of each parameter
     is optional, but should be included if not obvious.
 
-    If \*args or \*\*kwargs are accepted,
+    If *args or **kwargs are accepted,
     they should be listed as ``*args`` and ``**kwargs``.
 
     The format for a parameter is::
@@ -133,7 +123,7 @@ def module_level_function(param1, param2=None, *args, **kwargs):
 
 
 def example_generator(n):
-    """Generators have a ``Yields`` section instead of a ``Returns`` section.
+    """Create a generator with ``Yields`` section instead of a ``Returns`` section.
 
     Args:
         n (int): The upper limit of the range to generate, from 0 to `n` - 1.
@@ -176,12 +166,13 @@ class ExampleError(Exception):
     """
 
     def __init__(self, msg, code):
+        """Create the init for the Exception."""
         self.msg = msg
         self.code = code
 
 
 class ExampleClass(object):
-    """The summary line for a class docstring should fit on one line.
+    """Create a class, the summary line for a class docstring should fit on one line.
 
     If the class has public attributes, they may be documented here
     in an ``Attributes`` section and follow the same formatting as a
@@ -198,7 +189,7 @@ class ExampleClass(object):
     """
 
     def __init__(self, param1, param2, param3):
-        """Example of docstring on the __init__ method.
+        """Create a docstring on the __init__ method.
 
         The __init__ method may be documented in either the class level
         docstring, or as a docstring on the __init__ method itself.
@@ -233,7 +224,9 @@ class ExampleClass(object):
 
     @property
     def readwrite_property(self):
-        """:obj:`list` of :obj:`str`: Properties with both a getter and setter
+        """Create an example of read/write property.
+
+        :obj:`list` of :obj:`str`: Properties with both a getter and setter
         should only be documented in their getter method.
 
         If the setter method contains notable behavior, it should be
@@ -278,6 +271,7 @@ class ExampleClass(object):
         pass
 
     def __special_without_docstring__(self):
+        """Create a special method."""
         pass
 
     def _private(self):
