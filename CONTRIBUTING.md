@@ -222,3 +222,83 @@ Creating Pull Requests
    new bugfix).
 4. Hit 'submit'! And please be patient - the maintainers will get to you when
    they can.
+
+----
+
+## To contribute
+
+The general workflow that GitHub supports is:
+
+* **Fork** this repo to your own account.
+* **Clone** the repo to your machine.
+* Check out a new **"topic branch"** and make changes.
+* **Push** your topic branch to your fork.
+* Use the diff viewer on GitHub to create a **pull request** via a discussion.
+* Make any requested **changes**.
+* The pull request is then **merged** and the "topic branch" is deleted from the upstream (target) repo.
+
+The naming conventions for topic branches are: issue_ID, where the ID  is the ID # of a GitHub issue.
+
+Use official guides:
+
+* https://help.github.com/articles/fork-a-repo/
+* https://guides.github.com/activities/forking/
+
+Or the reference [tutorial](https://code.tutsplus.com/tutorials/how-to-collaborate-on-github--net-34267) for this documentation.
+
+Some commands that would complete the workflow above:
+
+**Step 1**: Forking
+
+In the top-right corner of the page, click **Fork Button**
+
+**Step 2**: Cloning
+
+Clone the repo using your own github login (YOUR_USERNAME):
+
+    git clone git@github.com:YOUR_USERNAME/python-project-builder.git
+
+**Step 3**: Adding the Upstream Remote
+
+Change into the directory and then you can add the upstream remote:
+
+    cd python-project-builder
+    git remote add upstream git@github.com:nullhack/python-project-builder.git
+
+To pull in changes from the source locally and merge them:
+
+    git fetch upstream
+    git merge upstream/master
+
+**Step 4**: Checking Out a Topic Branch
+
+Checkout a topic branch using the issue ID:
+
+    git checkout -b issue_ID
+
+**Step 5**: Committing
+
+**Make your changes** and create a commit that tracks those changes.
+
+    git commit -am "adding some specific change."
+
+**Step 6**: Pushing
+
+Push this topic branch to your own fork of the project.
+
+    git push origin issue_ID
+
+**Step 7**: Creating a Pull Request
+
+Now you may create a pull request:
+
+* Go to your fork of the repo
+* Click on issue_ID at  "your recently pushed branches"
+* Choose "Compare and Pull Request"
+
+Or:
+
+* Select your branch from the dropdown
+* click "Pull Request" or "Compare"
+
+[↑](#quick-links)

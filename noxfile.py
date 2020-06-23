@@ -3,9 +3,8 @@ import shutil
 import tempfile
 from pathlib import Path
 
-import toml
-
 import nox
+import toml
 from nox.sessions import Session
 
 versions = ["3.6", "3.7", "3.8"]
@@ -148,7 +147,7 @@ def isort(session):
 
 
 @nox.session(**one_session_kwargs)
-def pre_commit(session):
+def precommit(session):
     """Perform pre-commit checks."""
     session = PoetrySession(session)
     session.install("pre-commit")

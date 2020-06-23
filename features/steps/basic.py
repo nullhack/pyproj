@@ -14,7 +14,11 @@ class Capturing(list):
     """Class to capture stdout."""
 
     def __enter__(self):
-        """Set a new stdout to capture changes."""
+        """Set a new stdout to capture changes.
+
+        Returns:
+            list: self
+        """
         self._stdout = sys.stdout
         sys.stdout = self._stringio = StringIO()
         return self

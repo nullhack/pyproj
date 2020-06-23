@@ -46,7 +46,7 @@ def function_with_types_in_docstring(param1, param2):
         param1 (int): The first parameter.
         param2 (str): The second parameter.
 
-    Returns:
+    Return:
         bool: The return value. True for success, False otherwise.
 
     .. _PEP 484:
@@ -62,7 +62,7 @@ def function_with_pep484_type_annotations(param1: int, param2: str) -> bool:
         param1: The first parameter.
         param2: The second parameter.
 
-    Returns:
+    Return:
         The return value. True for success, False otherwise.
 
     """
@@ -112,8 +112,6 @@ def module_level_function(param1, param2=None, *args, **kwargs):
             }
 
     Raises:
-        AttributeError: The ``Raises`` section is a list of all exceptions
-            that are relevant to the interface.
         ValueError: If `param2` is equal to `param1`.
 
     """
@@ -166,7 +164,12 @@ class ExampleError(Exception):
     """
 
     def __init__(self, msg, code):
-        """Create the init for the Exception."""
+        """Create the init for the Exception.
+
+        Args:
+            msg (str): Human readable string describing the exception.
+            code (:obj:`int`, optional): Error code.
+        """
         self.msg = msg
         self.code = code
 
@@ -219,7 +222,11 @@ class ExampleClass(object):
 
     @property
     def readonly_property(self):
-        """str: Properties should be documented in their getter method."""
+        """str: Properties should be documented in their getter method.
+
+        Returns:
+            str: property
+        """
         return "readonly_property"
 
     @property
@@ -231,6 +238,9 @@ class ExampleClass(object):
 
         If the setter method contains notable behavior, it should be
         mentioned here.
+
+        Returns:
+            list: property
         """
         return ["readwrite_property"]
 

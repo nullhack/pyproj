@@ -5,7 +5,7 @@ site_url: 'https://nullhack.github.io/python-project-builder'
 repo_url: 'https://github.com/nullhack/python-project-builder'
 edit_uri: ''
 
-copyright: Copyright &copy; 2020 Nullhack
+copyright: Copyright &copy; 2020 NullHack
 
 theme:
   name: 'material'
@@ -14,7 +14,7 @@ theme:
     primary: 'black'
     accent: 'dark green'
   icon:
-    repo: octicons/mark-github
+    repo: fontawesome/brands/github
   logo: imgs/logo/code_icon.svg
   favicon: imgs/favicon/code.svg
   font:
@@ -37,6 +37,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tabbed
+  - pymdownx.details
 
 plugins:
   - search
