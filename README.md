@@ -1,4 +1,4 @@
-> An awesome template for python projects using cutting edge tools
+*An awesome template for python projects using cutting edge tools*
 
 ---
 
@@ -10,8 +10,8 @@
 
 # PyProj
 
-This project is made to be clean, simple to use and make even the simplest `Hello World` production ready code.
-To achieve this, I stand on the shoulder of giants by using, modifying and creating code from multiple [sources](#aknowledgement) and projects that are successful, put together into a cookiecutter project ready to be used.
+This project is made to be clean, simple to use and make the simplest `Hello World` ready for production.
+To achieve this, I stand on the shoulder of giants using, modifying and creating code from multiple [sources](#acknowledgement) and projects, into a cookiecutter project ready to be used.
 
 ---
 
@@ -23,35 +23,34 @@ cookiecutter gh:nullhack/pyproj
 
 ## Running
 
-[nullhack.github.io/pyproj/running/](https://nullhack.github.io/pyproj/running/)
+[nullhack.github.io/pyproj/usage/running/](https://nullhack.github.io/pyproj/usage/running/)
 
 ## Testing
 
-[nullhack.github.io/pyproj/testing/](https://nullhack.github.io/pyproj/testing/)
+[nullhack.github.io/pyproj/usage/testing/](https://nullhack.github.io/pyproj/usage/testing/)
 
 ---
 
 ## Features
 
-* [Behave](https://behave.readthedocs.io/en/latest/)
-* [Black](https://github.com/psf/black)
-* [Cookiecutter](https://cookiecutter.readthedocs.io)
-* [Coverage](https://coverage.readthedocs.io/en/coverage-5.1/)
-* [Darglint](https://github.com/terrencepreilly/darglint)
-* [Flake8](https://flake8.pycqa.org/en/latest/)
-* [Isort](https://github.com/timothycrosley/isort)
-* [Material mkdocs](https://squidfunk.github.io/mkdocs-material/)
-* [Nox](https://nox.thea.codes/en/stable/)
-* [Poetry](https://python-poetry.org/)
-* [Pre-commit](https://pre-commit.com/)
-* [Safety](https://github.com/pyupio/safety)
-* [Xdoctest](https://github.com/Erotemic/xdoctest)
+* [Behave](https://behave.readthedocs.io/en/latest/): Behavior driven development (BDD)
+* [Black](https://github.com/psf/black): Code formatter
+* [Cookiecutter](https://cookiecutter.readthedocs.io): Create a project from a project template
+* [Coverage](https://coverage.readthedocs.io/en/coverage-5.1/): Measure, collect, and report on code coverage
+* [Darglint](https://github.com/terrencepreilly/darglint): Check docstring validity
+* [Flake8](https://flake8.pycqa.org/en/latest/): Runs all the tools by launching the single command
+* [Isort](https://github.com/timothycrosley/isort): Sort Python import definitions
+* [Material mkdocs](https://squidfunk.github.io/mkdocs-material/): Technical documentation using material design
+* [Nox](https://nox.thea.codes/en/stable/): Automation toolkit
+* [Poetry](https://python-poetry.org/): Dependency management and packaging
+* [Pre-commit](https://pre-commit.com/): Manage and maintain pre-commit hooks
+* [Safety](https://github.com/pyupio/safety): Checks installed dependencies for known security vulnerabilities
+* [Xdoctest](https://github.com/Erotemic/xdoctest): Discover and run doctests within a python package
 
 ---
 
 ## Acknowledgement
 
-* [Contribution guide](https://github.com/bitprophet/contribution-guide.org)
 * [Fastapi](https://github.com/tiangolo/fastapi)
 * [Gitmoji](https://github.com/carloscuesta/gitmoji)
 * [Hypermodern python](https://github.com/cjolowicz/hypermodern-python)
