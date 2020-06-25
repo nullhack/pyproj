@@ -24,7 +24,7 @@ class Capturing(list):
         return self
 
     def __exit__(self, *args):
-        """Return default stdout to It's place.."""
+        """Return default stdout to It's place."""
         self.extend(self._stringio.getvalue().splitlines())
         del self._stringio  # free up some memory
         sys.stdout = self._stdout

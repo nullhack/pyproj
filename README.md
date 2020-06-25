@@ -54,4 +54,4 @@ cookiecutter gh:nullhack/pyproj
 * [Fastapi](https://github.com/tiangolo/fastapi)
 * [Gitmoji](https://github.com/carloscuesta/gitmoji)
 * [Hypermodern python](https://github.com/cjolowicz/hypermodern-python)
-* [Napoleon](https://github.com/sphinx-contrib/napoleon)
+* [Google Style Guide](https://github.com/google/styleguide)

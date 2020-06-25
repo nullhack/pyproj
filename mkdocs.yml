@@ -1,8 +1,8 @@
-site_name: 'Project Builder'
-repo_name: 'nullhack/project_builder'
+site_name: 'Python Project Template'
+repo_name: 'nullhack/pyproj'
 site_description: 'A project template for python.'
-site_url: 'https://nullhack.github.io/python-project-builder'
-repo_url: 'https://github.com/nullhack/python-project-builder'
+site_url: 'https://nullhack.github.io/pyproj'
+repo_url: 'https://github.com/nullhack/pyproj'
 edit_uri: ''
 
 copyright: Copyright &copy; 2020 NullHack

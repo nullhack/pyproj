@@ -13,34 +13,18 @@ logger = logging.Logger(__name__)
 
 @given("template.py exists")
 def step_impl(context):
-    from python_project_template import template
+    from pyproj import template
 
     assert template.__name__
 
 
 @then("run all the functions to test coverage")
 def step_impl(context):
-    from python_project_template import template as t
+    from pyproj import template as t
 
-    t.function_with_types_in_docstring("param1", "param2")
-    t.function_with_pep484_type_annotations(1, 2)
-    t.module_level_function("param1", param2="param2")
-    try:
-        t.module_level_function("param1", param2="param1")
-    except ValueError as err:
-        logger.warning(err)
-    gen = t.example_generator(5)
-    logger.info([i for i in gen])
-    try:
-        t.ExampleError("msg", 1)
-    except Exception as err:
-        logger.warning(err)
-    c = t.ExampleClass("param1", "param2", "param3")
-    c.readonly_property
-    c.readwrite_property
-    c.readwrite_property = 1
-    c.example_method("param1", "param2")
-    c.__special__()
-    c.__special_without_docstring__()
-    c._private()
-    c._private_without_docstring()
+    assert t.template_function("hello") == "hello"
+    assert t.template_function("world", False) == ""
+    c = t.TemplateClass("hello")
+    assert c.message == "hello"
+    c = t.TemplateClass("hello", False)
+    assert c.message == ""

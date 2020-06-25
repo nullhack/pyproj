@@ -4,14 +4,14 @@ version = "0.1.0"
 description = ""
 authors = ["NullHack"]
 include = [
-    "python_project_template",
+    "pyproj",
     "cli.py"
 ]
 
 [tool.poetry.urls]
-"homepage" = "https://nullhack.github.io/python-project-builder"
-"documentation" = "https://nullhack.github.io/python-project-builder"
-"repository" = "https://github.com/nullhack/python-project-builder"
+"homepage" = "https://nullhack.github.io/pyproj"
+"documentation" = "https://nullhack.github.io/pyproj"
+"repository" = "https://github.com/nullhack/pyproj"
 
 [tool.poetry.dependencies]
 python = ">=3.6.1,<=3.8.2"
