@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyproj"
-version = "0.1.0"
+version = "20200626-alpha"
 description = ""
 authors = ["NullHack"]
 include = [

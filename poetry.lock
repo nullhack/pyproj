@@ -536,7 +536,7 @@ description = "A Material Design theme for MkDocs"
 name = "mkdocs-material"
 optional = false
 python-versions = "*"
-version = "5.3.2"
+version = "5.3.3"
 
 [package.dependencies]
 Pygments = ">=2.4"
@@ -703,7 +703,7 @@ description = "library with cross-python path, ini-parsing, io, code, log facili
 name = "py"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "1.8.2"
+version = "1.9.0"
 
 [[package]]
 category = "dev"
@@ -936,7 +936,7 @@ description = "Virtual Python Environment builder"
 name = "virtualenv"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7"
-version = "20.0.24"
+version = "20.0.25"
 
 [package.dependencies]
 appdirs = ">=1.4.3,<2"
@@ -1215,8 +1215,8 @@ mkdocs = [
     {file = "mkdocs-1.1.2.tar.gz", hash = "sha256:f0b61e5402b99d7789efa032c7a74c90a20220a9c81749da06dbfbcbd52ffb39"},
 ]
 mkdocs-material = [
-    {file = "mkdocs-material-5.3.2.tar.gz", hash = "sha256:a7510485d59b745de18bb75b57c3e2a285dbb334961dcb22c9934b0c937e8849"},
-    {file = "mkdocs_material-5.3.2-py2.py3-none-any.whl", hash = "sha256:cecf3ef4f2ec6f421b3e8833bd541347c965f595cf924dd15a5f2ddeb9b451d7"},
+    {file = "mkdocs-material-5.3.3.tar.gz", hash = "sha256:d2a1aba57b230b522734255974c751cec4c2f0c94abd772313da0183853233f8"},
+    {file = "mkdocs_material-5.3.3-py2.py3-none-any.whl", hash = "sha256:3755925ef9aa0b25502f6e9c33d96dada84929bec29d6f27b4322a7a6ae3b3a0"},
 ]
 mkdocs-material-extensions = [
     {file = "mkdocs-material-extensions-1.0.tar.gz", hash = "sha256:17d7491e189af75700310b7ec33c6c48a22060b8b445001deca040cb60471cde"},
@@ -1260,8 +1260,8 @@ pre-commit = [
     {file = "pre_commit-2.5.1.tar.gz", hash = "sha256:da463cf8f0e257f9af49047ba514f6b90dbd9b4f92f4c8847a3ccd36834874c7"},
 ]
 py = [
-    {file = "py-1.8.2-py2.py3-none-any.whl", hash = "sha256:a673fa23d7000440cc885c17dbd34fafcb7d7a6e230b29f6766400de36a33c44"},
-    {file = "py-1.8.2.tar.gz", hash = "sha256:f3b3a4c36512a4c4f024041ab51866f11761cc169670204b235f6b20523d4e6b"},
+    {file = "py-1.9.0-py2.py3-none-any.whl", hash = "sha256:366389d1db726cd2fcfc79732e75410e5fe4d31db13692115529d34069a043c2"},
+    {file = "py-1.9.0.tar.gz", hash = "sha256:9ca6883ce56b4e8da7e79ac18787889fa5206c79dcc67fb065376cd2fe03f342"},
 ]
 pycodestyle = [
     {file = "pycodestyle-2.6.0-py2.py3-none-any.whl", hash = "sha256:2295e7b2f6b5bd100585ebcb1f616591b652db8a741695b3d8f5d28bdc934367"},
@@ -1407,8 +1407,8 @@ urllib3 = [
     {file = "urllib3-1.25.9.tar.gz", hash = "sha256:3018294ebefce6572a474f0604c2021e33b3fd8006ecd11d62107a5d2a963527"},
 ]
 virtualenv = [
-    {file = "virtualenv-20.0.24-py2.py3-none-any.whl", hash = "sha256:1b253c5d0e76afe24c76ce288cdd5dd01ac7deaa55f644998c74e5a799349522"},
-    {file = "virtualenv-20.0.24.tar.gz", hash = "sha256:680011aa2995fb8b7c2bbea7da7afd8dcaf382def7a3e02a1b1fba4b402aa8cf"},
+    {file = "virtualenv-20.0.25-py2.py3-none-any.whl", hash = "sha256:ffffcb3c78a671bb3d590ac3bc67c081ea2188befeeb058870cba13e7f82911b"},
+    {file = "virtualenv-20.0.25.tar.gz", hash = "sha256:f332ba0b2dfbac9f6b1da9f11224f0036b05cdb4df23b228527c2a2d5504aeed"},
 ]
 xdoctest = [
     {file = "xdoctest-0.12.0-py2.py3-none-any.whl", hash = "sha256:82424d2cc4b6d6b96b7b7134c81e97a4594c536547c1954533128a6a26cf1cb2"},
