@@ -18,10 +18,7 @@ def template_function(message: str, show: bool = True) -> str:
         The message. Is show is True, empty string otherwise.
 
     """
-    if show:
-        return message
-    else:
-        return ""
+    return message if show else ""
 
 
 class TemplateClass:

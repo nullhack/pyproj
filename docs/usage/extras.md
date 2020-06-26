@@ -1,5 +1,3 @@
-# Extras
-
 ## Documentation Style
 
 
@@ -26,7 +24,7 @@ if __name__ == "__main__":
 
 ??? optional-class "Source"
     <pre>
-    Python hl_lines="1  7 8 9 10 11 12"
+    ```Python hl_lines="1  7 8 9 10 11 12"
     import typer
 
     app = typer.Typer()
@@ -43,6 +41,7 @@ if __name__ == "__main__":
 
     if __name__ == "__main__":
         app()
+    ```
     </pre>
 
 ---

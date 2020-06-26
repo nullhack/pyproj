@@ -5,6 +5,7 @@ Awesome CLI description.
 """
 
 import typer
+from pyproj.template import template_function
 
 app = typer.Typer()
 
@@ -13,7 +14,7 @@ app = typer.Typer()
 def run(show: bool = typer.Option(None, "--show", "-s")):
     """Awesome function."""
     if show:
-        typer.echo("hello world")
+        typer.echo(template_function("hello world", show))
     else:
         typer.echo("*****")
 
