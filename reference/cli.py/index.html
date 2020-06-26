@@ -5,6 +5,7 @@
 <span class=sd>&quot;&quot;&quot;</span>
 
 <span class=kn>import</span> <span class=nn>typer</span>
+<span class=kn>from</span> <span class=nn>pyproj.template</span> <span class=kn>import</span> <span class=n>template_function</span>
 
 <span class=n>app</span> <span class=o>=</span> <span class=n>typer</span><span class=o>.</span><span class=n>Typer</span><span class=p>()</span>
 
@@ -13,7 +14,7 @@
 <span class=k>def</span> <span class=nf>run</span><span class=p>(</span><span class=n>show</span><span class=p>:</span> <span class=nb>bool</span> <span class=o>=</span> <span class=n>typer</span><span class=o>.</span><span class=n>Option</span><span class=p>(</span><span class=kc>None</span><span class=p>,</span> <span class=s2>&quot;--show&quot;</span><span class=p>,</span> <span class=s2>&quot;-s&quot;</span><span class=p>)):</span>
     <span class=sd>&quot;&quot;&quot;Awesome function.&quot;&quot;&quot;</span>
     <span class=k>if</span> <span class=n>show</span><span class=p>:</span>
-        <span class=n>typer</span><span class=o>.</span><span class=n>echo</span><span class=p>(</span><span class=s2>&quot;hello world&quot;</span><span class=p>)</span>
+        <span class=n>typer</span><span class=o>.</span><span class=n>echo</span><span class=p>(</span><span class=n>template_function</span><span class=p>(</span><span class=s2>&quot;hello world&quot;</span><span class=p>,</span> <span class=n>show</span><span class=p>))</span>
     <span class=k>else</span><span class=p>:</span>
         <span class=n>typer</span><span class=o>.</span><span class=n>echo</span><span class=p>(</span><span class=s2>&quot;*****&quot;</span><span class=p>)</span>
 
